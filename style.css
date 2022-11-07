@@ -13,7 +13,7 @@
   --azul-900:  #0E1B29;
   --roxo-700: rgb(109, 59, 160);
   --white-200: whitesmoke;
-  --gray-100: rgba(128, 128, 128, 0.61);
+  --gray-100: rgba(128, 128, 128, 0.089);
 }
 body {
   width: 100%;
@@ -30,13 +30,19 @@ body {
 .header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
  
 }
  
-img {
+figure {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 20px;
-  border: 1px solid var(--gray-100);
+ text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
 }
 
 
@@ -61,34 +67,37 @@ li{
 
 li:hover{
   border: 1px solid rgba(53, 26, 80, 0.733);
-  background-color: var(--roxo-700);
+  background-color: var(--white-200);
+  color: var(--azul-900);
 }
 
 .conteudo {
   display: flex;
   width: 100%;
-  background-color: rgb(9, 43, 73);
+  align-items: center;
+  justify-content: space-around;
+  background-color: tomato;
 }
 .capa {
-  background-color: tomato;
+ 
   width: 50%;
   height: auto;
 }
 
 .titulo {
   font-size: 3rem;
-  padding: 20px;
+  padding: 20px 60px;
 }
 .subtitulo {
   font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 1.3;
-  padding: 20px;
+  letter-spacing: 1.5;
+  padding: 10px 60px;
 }
 
 .btn {
   display: inline-block;
-  background-color: var(--azul-900);
+  background-color: rgb(9, 43, 73);
   border-radius: 4px;
   padding: 20px 30px;
   font-weight: 700;
@@ -96,5 +105,10 @@ li:hover{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin: 20px;
+  margin: 10px 60px;
+}
+.ph-broadcast{
+  font-size: 25rem;
+  color: var(--white-200);
+  padding: 30px;
 }
