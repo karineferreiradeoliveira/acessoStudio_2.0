@@ -73,6 +73,7 @@ li:hover{
 
 .conteudo {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   justify-content: space-around;
@@ -85,14 +86,18 @@ li:hover{
 }
 
 .titulo {
+
   font-size: 3rem;
   padding: 20px 60px;
 }
 .subtitulo {
+  width: 100%;
+  max-width: 450px;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1.5;
   padding: 10px 60px;
+  text-align: left;
 }
 
 .btn {
@@ -106,9 +111,65 @@ li:hover{
   text-transform: uppercase;
   text-align: center;
   margin: 10px 60px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--white-200);
+  color: var(--azul-900);
 }
 .ph-broadcast{
   font-size: 25rem;
   color: var(--white-200);
   padding: 30px;
+}
+
+.especialistas {
+  background-color: var(--azul-900);
+  color: var(--white-200);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.servicos {
+  color: var(--white-200);
+  display: flex;
+  margin: 20px;
+  background-color: var(--azul-900);
+  border-radius: 4px;
+}
+/* .servicos::before {
+  content: "";
+  width: 4px;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  right: 600px;
+} */
+
+.item { 
+  width: 30rem;
+  padding: 30px;
+  
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  padding: 30px;
+  text-align: center;
+}
+span {
+  padding: 5px;
+  background-color: var(--azul-900);
+  font-weight: 600;
 }
