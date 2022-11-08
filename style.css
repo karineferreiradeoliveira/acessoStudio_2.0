@@ -205,3 +205,20 @@ span {
   background-color: var(--white-200);
   color: var(--azul-900);
 }
+
+.information{
+  display: flex;
+margin: 20px;
+}
+.sobre {
+  width: 50%;
+  border: 1px solid var(--azul-900);
+  
+}
+.sobre h2 {
+
+}
+.contato{
+  
+  border: 1px solid var(--azul-900);
+}
