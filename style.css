@@ -228,7 +228,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 .redes a {
   color: var(--white-200);
@@ -236,16 +236,19 @@ span {
   font-size: 3rem;
   text-align: center;
   padding: 10px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
+  
 }
 
 .redes a:hover{
   font-weight: 900;
   font-size: 3.2rem;
+  
 }
 
 .footer {
   background-color: var(--azul-900);
   width: 100%;
+
   
 }
