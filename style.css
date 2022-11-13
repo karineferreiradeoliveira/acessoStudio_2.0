@@ -250,7 +250,7 @@ span {
 
 .redes a:hover{
   font-weight: 900;
-  font-size: 3.2rem;
+  font-size: var(--titulo);
   
 }
 
