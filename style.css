@@ -94,24 +94,30 @@ li:hover{
   justify-content: space-around;
   background-color: var(--second-color);
 }
+
 .capa {
- 
   width: 100%;
-  
+  /* filter: brightness(50%);
+  background-image: url(/assets/capa-note.jpg);
+  background-size: cover;
+  background-position: center; */
+ 
+  height: 100vh;
+  padding: 250px;
+  color: white;
 }
 
 .titulo {
-  
-  font-size: 3rem;
-  padding: 20px 60px;
+  width: 100%;
+  max-width: 600px;
+  font-size: 3.5rem;
+  padding: 30px;
 }
 .subtitulo {
-  width: 100%;
-  max-width: 450px;
+  width: 500px;
   font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 1.5;
-  padding: 10px 60px;
+  letter-spacing: .1rem;
   text-align: left;
 }
 
@@ -125,7 +131,7 @@ li:hover{
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin: 10px 60px;
+  margin: 10px 30px;
   transition: 0.3s;
 }
 
@@ -133,11 +139,11 @@ li:hover{
   background-color: var(--third-color);
   color: var(--primary-color);
 }
-.ph-broadcast{
+/* .ph-broadcast{
   font-size: 25rem;
   color: var(--third-color);
   padding: 30px;
-}
+} */
 
 .especialistas {
   background-color: var(--primary-color);
@@ -172,7 +178,7 @@ li:hover{
 h2 {
   margin: 0;
   font-size: var(--subtitulo-sessao);
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
@@ -197,9 +203,9 @@ span {
  
   background-color: var(--primary-color);
 }
-.call-to-action h2{
-  padding: 80px;
-  font-size: var(--subtitulo-sessao);
+.titulo-call-to-action{
+  padding: 5rem;
+  font-size: 3rem;
 
 }
 .btn-call {
@@ -224,6 +230,7 @@ span {
 
 .information{
   display: flex;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -231,15 +238,20 @@ span {
   padding: 5px 40px;
   font-size: 1rem;
   text-align: left;
-  letter-spacing: 1.5;
+  letter-spacing: .1rem;
 }
 .sobre {
-  width: 100%;
+  width: 400px;
+  letter-spacing: .1rem;
   
+}
+.sobre p {
+  
+  padding: 20px;
 }
 
 .redes {
-  width: 50%;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -269,32 +281,32 @@ span {
 }
 
 @media (max-width: 500px)  {
-  body {
-    margin: 0 auto;
-  }
+
   .capa {
-    max-width: 100%;
-    align-items: center;
+    all: unset;
+    width: 100%;
+    height: 100vh;
+    
   }
 
   .titulo {
-    margin: 0 auto;  
-    font-size: 3.5rem;
-    padding: 2rem 1.8rem;
+    width: 400px;
     text-align: center;
+    margin: 0 auto;
+    padding: 6.5rem 2rem 1rem 1rem;
+    
   }
    .subtitulo {
-    /* width: 100%;
-    max-width: 450px; */
-    font-size: 1.5rem;
-    padding: 20px 30px;
+    margin: 0 auto;
     text-align: center;
+    letter-spacing: .1rem;
+   
   }
   .btn {
     display: block;
     background-color:var(--primary-color);
     font-size: 1.5rem;
-    margin: 20px 40px;
+    margin: 40px;
     
   }
 
