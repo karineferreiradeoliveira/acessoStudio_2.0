@@ -11,11 +11,16 @@
 
 :root {
   /* colors */
-
-  --azul-900:  #0E1B29;
-  --roxo-700: rgb(109, 59, 160);
-  --white-200: whitesmoke;
+  --primary-color:  #ededf2;
+  --second-color: #aeadb4;
+  --third-color: #0d0d0d;
   --gray-100: rgba(128, 128, 128, 0.089);
+
+
+  /* --primary-color:  #0E1B29;
+  --second-color: rgb(109, 59, 160);
+  --third-color: whitesmoke;
+  --gray-100: rgba(128, 128, 128, 0.089); */
 
   /* fonts */
 
@@ -31,9 +36,8 @@ body {
   margin: 0 auto;
   
   
-  
-  background-color:var(--azul-900);
-  color: var(--white-200) ;
+  background-color:var(--primary-color);
+  color: var(--third-color) ;
  
 }
 
@@ -77,8 +81,8 @@ li{
 
 li:hover{
   border: 1px solid rgba(53, 26, 80, 0.733);
-  background-color: var(--white-200);
-  color: var(--azul-900);
+  background-color: var(--third-color);
+  color: var(--primary-color);
 }
 
 .conteudo {
@@ -87,7 +91,7 @@ li:hover{
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--roxo-700);
+  background-color: var(--second-color);
 }
 .capa {
  
@@ -112,11 +116,11 @@ li:hover{
 
 .btn {
   display: inline-block;
-  background-color: var(--azul-900);
+  background-color: var(--primary-color);
   border-radius: 4px;
   padding: 20px 30px;
   font-weight: 700;
-  color: var(--white-200);
+  color: var(--third-color);
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -125,28 +129,28 @@ li:hover{
 }
 
 .btn:hover {
-  background-color: var(--white-200);
-  color: var(--azul-900);
+  background-color: var(--third-color);
+  color: var(--primary-color);
 }
 .ph-broadcast{
   font-size: 25rem;
-  color: var(--white-200);
+  color: var(--third-color);
   padding: 30px;
 }
 
 .especialistas {
-  background-color: var(--azul-900);
-  color: var(--white-200);
+  background-color: var(--primary-color);
+  color: var(--third-color);
   font-size: 1.8rem;
   text-align: center;
   padding: 2rem;
 }
 
 .servicos {
-  color: var(--white-200);
+  color: var(--third-color);
   display: flex;
   margin: 20px;
-  background-color: var(--azul-900);
+  background-color: var(--primary-color);
   border-radius: 4px;
 }
 /* .servicos::before {
@@ -190,7 +194,7 @@ span {
   padding: 30px;
   width: 100%;
  
-  background-color: var(--azul-900);
+  background-color: var(--primary-color);
 }
 .call-to-action h2{
   padding: 80px;
@@ -200,10 +204,11 @@ span {
 .btn-call {
   display: block;
   text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--white-200);
-  background-color: var(--roxo-700);
+  color: var(--third-color);
+  background-color: var(--second-color);
   padding: 20px 40px;
   border-radius: 4px;
   margin: auto;
@@ -212,8 +217,8 @@ span {
 }
 
 .btn-call:hover {
-  background-color: var(--white-200);
-  color: var(--azul-900);
+  background-color: var(--third-color);
+  color: var(--primary-color);
 }
 
 .information{
@@ -240,7 +245,7 @@ span {
 
 }
 .redes a {
-  color: var(--white-200);
+  color: var(--third-color);
   text-decoration: none;
   font-size: var(--titulo);
   text-align: center;
@@ -257,12 +262,15 @@ span {
 
 .footer {
 
-  background-color: var(--azul-900);
+  background-color: var(--primary-color);
   width: 100%;
    
 }
 
 @media (max-width: 500px)  {
+  body {
+    margin: 0 auto;
+  }
   .capa {
     max-width: 100%;
     align-items: center;
