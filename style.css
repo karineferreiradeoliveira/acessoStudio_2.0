@@ -228,7 +228,8 @@ span {
   letter-spacing: 1.5;
 }
 .sobre {
-  width: 50%;
+  width: 100%;
+  
 }
 
 .redes {
@@ -292,5 +293,23 @@ span {
 
   .information {
     flex-wrap: wrap;
+  }
+  .sobre p {
+    text-align: center;
+    letter-spacing: .2rem;
+  }
+  .contato p {
+    text-align: center;
+  }
+
+  .redes {
+  
+  margin: 0 auto;
+  }
+  figure {
+    margin: 0 auto;
+  }
+  .nav-ul {
+    padding: .5rem;
   }
 }
