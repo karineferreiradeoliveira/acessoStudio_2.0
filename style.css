@@ -21,9 +21,9 @@
 
   --titulo: 3rem;
   --subtitulo: 1.2rem;
-  --titulo-sessao:;
-  --subtitulo-sessao:;
-  --paragrafo: 
+  --titulo-sessao:2rem;
+  --subtitulo-sessao:1.5rem;
+  --paragrafo: 1.2rem;
 }
 body {
   width: 100%;
@@ -91,8 +91,8 @@ li:hover{
 }
 .capa {
  
-  width: 50%;
-  height: auto;
+  width: 100%;
+  
 }
 
 .titulo {
@@ -255,9 +255,42 @@ span {
 }
 
 .footer {
+
   background-color: var(--azul-900);
   width: 100%;
-  
+   
+}
 
-  
+@media (max-width: 500px)  {
+  .capa {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .titulo {
+    margin: 0 auto;  
+    font-size: 3.5rem;
+    padding: 2.5rem;
+    text-align: center;
+  }
+   .subtitulo {
+    /* width: 100%;
+    max-width: 450px; */
+    font-size: 1.5rem;
+    /* padding: 10px 60px; */
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    background-color:var(--azul-900);
+    
+  }
+
+  .ph-broadcast{
+    display: none;
+  }
+
+  .information {
+    flex-wrap: wrap;
+  }
 }
