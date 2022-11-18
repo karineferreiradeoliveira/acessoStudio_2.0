@@ -290,21 +290,31 @@ span {
   .ph-broadcast{
     display: none;
   }
-
+.nav-ul{
+  padding: 0 auto;
+}
   .information {
     flex-wrap: wrap;
+  }
+  .sobre {
+    margin: auto;
   }
   .sobre p {
     text-align: center;
     letter-spacing: .2rem;
   }
+  .contato {
+    margin: auto;
+  }
   .contato p {
     text-align: center;
+   
   }
 
   .redes {
-  
+  flex-wrap: nowrap;
   margin: 0 auto;
+  
   }
   figure {
     margin: 0 auto;
@@ -312,4 +322,15 @@ span {
   .nav-ul {
     padding: .5rem;
   }
+
+  li {
+    justify-content: space-around;
+    font-size: .8rem;
+  }
+  .call-to-action h2{
+    padding: 20px;
+    font-size: var(--subtitulo-sessao);
+  
+  }
+  
 }
