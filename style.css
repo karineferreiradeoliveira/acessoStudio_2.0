@@ -97,7 +97,7 @@ li:hover{
 
 .capa {
   width: 100%;
-  /* filter: brightness(50%);
+  /* filter: brightness(90%);
   background-image: url(/assets/capa-note.jpg);
   background-size: cover;
   background-position: center; */
@@ -108,6 +108,7 @@ li:hover{
 }
 
 .titulo {
+  text-shadow: 3;
   width: 100%;
   max-width: 600px;
   font-size: 3.5rem;
@@ -310,9 +311,7 @@ span {
     
   }
 
-  .ph-broadcast{
-    display: none;
-  }
+  
 .nav-ul{
   padding: 0 auto;
 }
@@ -349,7 +348,7 @@ span {
   li {
     justify-content: space-around;
     font-size: .8rem;
-    margin:.2rem;
+    /* margin:.2rem; */
   }
   .call-to-action h2{
     padding: 20px;
