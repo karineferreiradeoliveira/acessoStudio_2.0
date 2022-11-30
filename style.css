@@ -12,7 +12,7 @@
 :root {
   /* colors */
   --primary-color:  #ededf2;
-  --second-color: #aeadb4;
+  --second-color: #aeadb45c;
   --third-color: #0d0d0d;
   --gray-100: rgba(128, 128, 128, 0.089);
 
@@ -97,18 +97,17 @@ li:hover{
 
 .capa {
   width: 100%;
-  /* filter: brightness(90%);
-  background-image: url(/assets/capa-note.jpg);
+  
+  background-image: url(/assets/build.jpg);
   background-size: cover;
-  background-position: center; */
- 
+  background-position: center; 
   height: 100vh;
   padding: 250px;
   color: white;
 }
 
-.titulo {
-  text-shadow: 3;
+.titulo{
+  text-shadow: 1px 1px 2px rgb(9, 9, 9);
   width: 100%;
   max-width: 600px;
   font-size: 3.5rem;
@@ -122,6 +121,13 @@ li:hover{
   text-align: left;
 }
 
+.titulo-h2 {
+  width: 500px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-align: left;
+}
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
@@ -155,11 +161,12 @@ li:hover{
 }
 
 .servicos {
-  color: var(--third-color);
+  /* color: var(--third-color); */
   display: flex;
   margin: 20px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   border-radius: 4px;
+  border: 1px solid #0d0d0da1;
 }
 /* .servicos::before {
   content: "";
