@@ -156,15 +156,22 @@ li:hover{
 .item-servicos { 
   
   width: 20rem;
-  height: 500px;
   padding: 30px;
   border-radius: 4px;
   color: var(--primary-color);
   background-color: var(--atention-color);
+  text-align: center;
 }
 
 .span-item {
   font-weight: 900;
+}
+
+.icone-item {
+  display: flex;
+  justify-content: center;
+  font-size: 7rem;
+  padding: 40px;
 }
 
 h2 {
@@ -213,6 +220,7 @@ h2 {
 }
 
 .information{
+
   margin: 40px;
   display: flex; 
 }
@@ -227,8 +235,8 @@ h2 {
   padding: 20px;
 }
 
-
 .contato {
+  margin:  0 60px;
   width: 30rem;
   padding: 20px;
 }
@@ -240,7 +248,7 @@ h2 {
 
 .redes {
   width: 100%;
- 
+  margin: 40px auto;
 
 }
 
@@ -259,27 +267,32 @@ h2 {
 }
 
 .footer {
+  border-top: 1px solid var(--gray-100);
   padding: 30px;
   text-align: center;
-  /* background-color: var(--primary-color); */
   width: 100%; 
 }
 
 
 /* Media Queries */
 
-@media (min-width: 768px) and (max-width: 1023px)  {
-
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-around;
+  }
   .capa {
     all: unset;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .titulo {
     width: 100vw;
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 2rem;
     text-shadow: none; 
   }
@@ -291,57 +304,36 @@ h2 {
     letter-spacing: .1rem; 
   }
 
-  .btn {
-    display: block;
-    font-size: 1.5rem;
-    margin: 40px; 
-  }
-
   .call-to-action h2{
     padding: 20px;
   }
-  .information {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
+
+  .item-servicos {
+    margin: 20px;
   }
 
-/* .nav-ul{
-  padding: 0 auto;
-}
+  .information{
+  flex-wrap: wrap;
+  }
 
   .sobre {
-    margin: auto;
-  }
-  .sobre p {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    letter-spacing: .2rem;
   }
-  .contato {
-    margin: auto;
-  }
-  .contato p {
+  .titulo-h2 {
+    width: 100%;
     text-align: center;
-   
+  }
+
+  p {
+    text-align: center;
   }
 
   .redes {
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  
-  }
-  figure {
-    margin: 0 auto;
-  }
-  .nav-ul {
-    padding: .5rem;
+    text-align: center;
+    margin: 40px auto;
   }
 
-  li {
-    justify-content: space-around;
-    font-size: .8rem;
-    /* margin:.2rem; 
-  }
-  */
-  
+
 }
