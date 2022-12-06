@@ -208,7 +208,7 @@ h2 {
 }
 
 .information{
-
+  /* background-color: var(--atention-color); */
   margin: 40px;
   display: flex; 
 }
@@ -253,12 +253,27 @@ h2 {
   font-weight: 900;
   font-size: var(--titulo); 
 }
+.titulo-h2 {
+  position: relative;
+}
+
+.titulo-h2::after {
+  content: "";
+  width: 60px;
+  height: 5px;
+  background: var(--atention-color);
+  display: block;
+  margin-top:-35px;
+  z-index: -1;
+
+}
 
 .footer {
   border-top: 1px solid var(--gray-100);
   padding: 30px;
   text-align: center;
   width: 100%; 
+  /* background-color: var(--atention-color); */
 }
 
 
@@ -288,12 +303,10 @@ h2 {
     align-items: center;
     color: var(--primary-color);
     text-shadow: 1px 1px 2px black;
-
     background-image: url(/assets/build.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center;  */
-    
+    /* background-position: center;  */ 
   }
 
   .titulo {
@@ -301,20 +314,17 @@ h2 {
     text-align: center;
     margin: 20px auto;
     padding: 1rem;
-    
   }
 
   .subtitulo {
-    
     padding: 10px 5px;
     text-align: center;
   }
   .especialistas {
   padding: 25px;
-}
+  }
   .call-to-action{
     padding: 10px;
-    /* font-size: 1rem; */
   }
   .titulo-call-to-action {
     padding: 5px;
