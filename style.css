@@ -206,7 +206,11 @@ h2 {
   background-color: var(--third-color);
   color: var(--primary-color);
 }
-
+.rodape {
+  width: 100vw;
+  background-color: #1f1e1e11;
+  
+}
 .information{
   /* background-color: var(--atention-color); */
   margin: 40px;
@@ -255,6 +259,7 @@ h2 {
 }
 .titulo-h2 {
   position: relative;
+  padding: 20px;
 }
 
 .titulo-h2::after {
