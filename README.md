@@ -9,3 +9,5 @@ Durante o processo de criaçao percebi gaps de conhecimento e entendi por onde d
 Aqui mostrarei meu desenvolvimento e progresso no aprendizado voltado para o desenvolvimento web.
 
 Veja este projeto online em: https://acesso-studio-2-0.vercel.app/
+
+Em desenvolvimento ...
